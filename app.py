@@ -11,8 +11,8 @@ import streamlit as st
 TITULO = "🐄 Preguntale al Profe"
 SUBTITULO = "Alimentación del bovino de carne"
 DESCRIPCION = (
-    "Tu ayudante para estudiar en casa. Escribí tu duda como te salga "
-    "y te la explico en palabras simples, con lo que vimos en clase."
+    "Su ayudante para estudiar en casa. Escriba su duda como le salga "
+    "y se la explico en palabras simples, con lo que vimos en clase."
 )
 
 TEMAS = [
@@ -24,7 +24,7 @@ TEMAS = [
 
 AVISO_V0 = (
     "🛠️ **Versión 0:** todavía no tengo la IA conectada. "
-    "Muy pronto vas a recibir acá una respuesta de verdad."
+    "Muy pronto va a recibir aquí una respuesta."
 )
 
 st.set_page_config(page_title="Preguntale al Profe", page_icon="🐄")
@@ -39,22 +39,22 @@ pestana_pregunta, pestana_concepto, pestana_repaso = st.tabs(
 
 # --- 1. Preguntar una duda ----------------------------------------------------
 with pestana_pregunta:
-    st.write("Escribí cualquier duda sobre alimentación del bovino de carne.")
+    st.write("Escriba cualquier duda sobre alimentación del bovino de carne.")
     pregunta = st.text_area(
-        "Tu pregunta",
-        placeholder="Ej: ¿Qué es la materia seca y por qué importa?",
+        "Su pregunta",
+        placeholder="Ej: ¿Qué es la materia seca de la avena?",
         key="pregunta",
     )
     if st.button("Preguntar", key="boton_pregunta"):
         if not pregunta.strip():
-            st.warning("Escribí tu pregunta antes de tocar el botón.")
+            st.warning("Escriba su pregunta antes de presionar el botón.")
         else:
             st.info(AVISO_V0)
-            st.write(f"**Tu pregunta:** {pregunta.strip()}")
+            st.write(f"**Su pregunta:** {pregunta.strip()}")
 
 # --- 2. Explicar un concepto con un ejemplo de campo ---------------------------
 with pestana_concepto:
-    st.write("Escribí un concepto que no entiendas y te lo explico con un ejemplo de campo.")
+    st.write("Escriba un concepto que no entienda y se lo explico con un ejemplo de campo.")
     concepto = st.text_input(
         "Concepto",
         placeholder="Ej: requerimiento de energía",
@@ -62,14 +62,14 @@ with pestana_concepto:
     )
     if st.button("Explicar", key="boton_concepto"):
         if not concepto.strip():
-            st.warning("Escribí el concepto que querés que te explique.")
+            st.warning("Escriba el concepto que quiere que le explique.")
         else:
             st.info(AVISO_V0)
             st.write(f"**Concepto pedido:** {concepto.strip()}")
 
 # --- 3. Preguntas de repaso ---------------------------------------------------
 with pestana_repaso:
-    st.write("Elegí un tema y te hago preguntas para practicar antes de la prueba.")
+    st.write("Elija un tema y le propongo 5 afirmaciones de verdadero o falso para practicar.")
     tema = st.selectbox("Tema", TEMAS, key="tema")
     if st.button("Empezar repaso", key="boton_repaso"):
         st.info(AVISO_V0)
@@ -78,5 +78,5 @@ with pestana_repaso:
 st.divider()
 st.caption(
     "Esta app no reemplaza al docente ni hace cálculos de raciones. "
-    "Ante cualquier duda, consultá en clase."
+    "Ante cualquier duda, consulte en clase."
 )
