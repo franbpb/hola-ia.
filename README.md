@@ -44,6 +44,14 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+## Pitch
+
+1. Mis alumnos de bachillerato agrario se trancan con conceptos como materia seca o requerimiento cuando estudian en casa, y lo que encuentran en internet no coincide con lo que se dio en clase.
+2. Preguntale al Profe responde sus dudas, explica conceptos con ejemplos de campo y les toma un repaso de verdadero o falso antes de la prueba.
+3. La IA entiende la pregunta como la escribe un alumno de 17 años y responde con mi apunte y mis respuestas, no con información de otros países.
+4. Al probarla vi que ante un pedido de ración real se negaba sin explicar nada, así que ajusté las reglas para que explique el concepto y derive el cálculo al docente.
+5. El próximo paso es usarla con mis grupos antes de la próxima prueba y contar cuántas preguntas terminan en "no está en el apunte": ese dato me dice qué tengo que agregar al apunte.
+
 ## Autor
 
 Francisco Berriel · Ingeniero agrónomo y docente de bachillerato agrario.
