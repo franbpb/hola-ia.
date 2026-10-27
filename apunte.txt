@@ -1,0 +1,138 @@
+2_ALIMENTACIÓN · ALIMENTACIÓN DEL BOVINO DE CARNE
+Apunte del docente · Prof. Francisco Berriel · Bachillerato agrario
+
+======================================================================
+1. DEFINICIONES BÁSICAS
+======================================================================
+
+Alimento: todo lo que el animal come o toma y le aporta nutrientes. Por ejemplo: el pasto de una pradera, un verdeo de avena, un fardo, el grano de maíz o una ración.
+
+Nutriente: cada una de las sustancias del alimento que el animal usa para vivir, crecer, preñarse y producir. Son seis: agua, carbohidratos, proteínas, grasas, minerales y vitaminas.
+
+Materia fresca (o "tal cual"): el alimento como lo come el animal, con toda su agua.
+
+Materia seca (MS): todo lo que queda del alimento cuando se le saca el agua. Ahí están los nutrientes: la fibra, la proteína, los azúcares, el almidón, las grasas y los minerales. Se expresa en porcentaje: un verdeo con 20% de MS tiene 20 kg de materia seca y 80 kg de agua en cada 100 kg de pasto fresco.
+
+Por qué usamos la materia seca: los alimentos tienen cantidades de agua muy distintas. Para compararlos de forma justa, y para saber cuánto come realmente el animal, siempre se habla en kilos de materia seca.
+
+Requerimiento: la cantidad de nutrientes que el animal necesita por día. Depende de su peso, su edad y lo que esté haciendo (mantenerse, crecer, gestar un ternero, dar leche o engordar).
+
+Mantenimiento: lo que el animal necesita solo para mantenerse vivo y con el mismo peso (respirar, caminar, mantener la temperatura del cuerpo). Todo lo que come por encima del mantenimiento lo puede usar para producir.
+
+Consumo: la cantidad de alimento que el animal come por día. Se expresa en kilos de materia seca por día (kg MS/día).
+
+Digestibilidad: la parte del alimento que el animal logra aprovechar. Un pasto tierno y verde es más digestible que un pasto pasado, duro y con mucho tallo.
+
+Rumiante: animal que tiene el estómago dividido en cuatro partes y rumia (vuelve a masticar el alimento). El bovino es un rumiante.
+
+Rumen: la parte más grande del estómago del bovino. Allí viven millones de microorganismos (bacterias, hongos y protozoarios) que digieren la fibra del pasto, algo que el animal no podría hacer solo. Por eso decimos que, al alimentar a la vaca, también alimentamos a los microorganismos del rumen.
+
+======================================================================
+2. LOS NUTRIENTES
+======================================================================
+
+Son seis grupos. Ninguno puede faltar.
+
+2.1 Agua
+Es el nutriente que el animal necesita en mayor cantidad. Forma más de la mitad del cuerpo del animal. Sirve para la digestión, para regular la temperatura y para producir leche. Una parte la toma bebiendo y otra la obtiene del alimento: los verdeos y las praderas tienen mucha agua, los fardos y las raciones casi nada. Una vaca adulta puede tomar más de 40 litros por día, y más con calor o cuando da leche. El agua debe ser limpia y estar siempre disponible: si toma poca agua, el animal come menos.
+
+2.2 Carbohidratos
+Son la principal fuente de energía de la dieta del bovino. Hay dos tipos:
+- Fibra: está en las paredes de las plantas (pasto, fardo, rastrojo). La digieren los microorganismos del rumen. Es necesaria para que el rumen funcione bien y para que el animal rumie.
+- Almidón y azúcares: se digieren más rápido y dan mucha energía. El almidón está en los granos (maíz, sorgo, cebada) y los azúcares en el pasto tierno.
+
+2.3 Proteínas
+Sirven para formar músculo, crecer, gestar el ternero y producir leche. También las necesitan los microorganismos del rumen para multiplicarse. Los animales jóvenes que están creciendo necesitan proporcionalmente más proteína. Fuentes: verdeos y praderas tiernas, leguminosas (trébol, alfalfa, lotus) y concentrados proteicos como el expeller de soja.
+
+2.4 Grasas (lípidos)
+Aportan mucha energía en poco volumen. El bovino tolera poca cantidad en la dieta, porque en exceso afecta a los microorganismos del rumen. Están en pequeñas cantidades en el pasto y en algunos granos y semillas.
+
+2.5 Minerales
+Se necesitan en poca cantidad, pero son indispensables.
+- Macrominerales (se necesitan en más cantidad): calcio y fósforo (huesos, leche, fertilidad), sodio (la sal común), magnesio.
+- Microminerales (en muy poca cantidad): cobre, zinc, selenio, yodo, cobalto.
+La falta de minerales puede bajar la fertilidad y el crecimiento. Se suelen dar con sal mineralizada o bloques.
+
+2.6 Vitaminas
+También se necesitan en poca cantidad. Las más importantes en el bovino son la A, la D y la E. El pasto verde aporta vitamina A (como caroteno) y vitamina E; el sol ayuda a formar la vitamina D. Las vitaminas del grupo B y la vitamina K las fabrican los microorganismos del rumen, por eso en el bovino adulto casi nunca faltan.
+
+Importante: la energía no es un nutriente en sí misma. La energía sale de los carbohidratos, las grasas y, en menor medida, las proteínas.
+
+======================================================================
+3. TIPOS DE ALIMENTOS
+======================================================================
+
+3.1 Forrajes
+Son alimentos vegetales que aportan fibra. Son la base de la alimentación del bovino de carne en Uruguay.
+- Campo natural: la base de la ganadería uruguaya.
+- Praderas: mezclas de gramíneas y leguminosas (festuca, trébol blanco, trébol rojo, lotus, alfalfa).
+- Verdeos de invierno: avena, raigrás, cebada forrajera. Muy tiernos, con mucha proteína y mucha agua.
+- Verdeos de verano: sorgo forrajero, moha.
+- Forrajes conservados: fardos o heno (pasto secado al sol) y silo o ensilaje (pasto o planta de maíz o sorgo picada y conservada sin aire).
+
+3.2 Concentrados
+Tienen más nutrientes por kilo de materia seca y menos fibra que los forrajes.
+- Concentrados energéticos: aportan sobre todo energía. Ejemplos: grano de maíz, sorgo, cebada, afrechillo de arroz o de trigo.
+- Concentrados proteicos: aportan sobre todo proteína. Ejemplos: expeller de soja, expeller de girasol, harina de soja.
+- Raciones comerciales (balanceados): mezclas preparadas de granos, proteicos, minerales y vitaminas.
+No todos los concentrados son energéticos: el expeller de soja se usa principalmente por su proteína.
+
+3.3 Suplementos minerales
+Sal común, sal mineralizada y bloques. Corrigen la falta de minerales del pasto.
+
+3.4 Contenido de materia seca aproximado de algunos alimentos
+| Alimento                     | % de materia seca aproximado |
+| Verdeo de avena o raigrás    | 15 a 25%                     |
+| Pradera                      | 18 a 25%                     |
+| Campo natural                | 25 a 35%                     |
+| Silo de planta de maíz       | 30 a 35%                     |
+| Fardo                        | 85 a 90%                     |
+| Grano de maíz                | 87 a 90%                     |
+| Ración comercial             | 88 a 90%                     |
+Los valores cambian según el estado de la planta, la época del año y la lluvia.
+
+======================================================================
+4. CONSUMO DE MATERIA SECA
+======================================================================
+
+Un bovino come, por día, aproximadamente entre el 2% y el 3% de su peso vivo en materia seca.
+
+De qué depende el consumo:
+- Del peso del animal: un animal más grande come más kilos.
+- De la etapa: una vaca con ternero al pie come más que una vaca seca.
+- De la calidad del alimento: un pasto tierno y digestible se digiere rápido, deja lugar en el rumen y el animal come más. Un pasto pasado, con mucha fibra, ocupa el rumen mucho tiempo y el animal come menos.
+- De la disponibilidad: si hay poco pasto en el potrero, el animal no llega a comer lo que necesita.
+- Del agua: si no tiene agua suficiente, come menos.
+
+Ejemplo: una vaca de 450 kg de peso vivo
+Si come el 2,2% de su peso en materia seca:
+450 kg x 2,2 / 100 = 9,9 kg, o sea, unos 10 kg de materia seca por día.
+
+Esos 10 kg de materia seca, ¿cuántos kilos frescos son?
+- Si come solo verdeo con 20% de MS: 10 / 0,20 = 50 kg de verdeo fresco.
+- Si come solo fardo con 88% de MS: 10 / 0,88 = unos 11,4 kg de fardo.
+La vaca come casi la misma cantidad de nutrientes, pero muchos más kilos de verdeo, porque el verdeo tiene mucha agua. Por eso siempre comparamos los alimentos en materia seca.
+
+======================================================================
+5. REQUERIMIENTOS POR ETAPA
+======================================================================
+
+Los requerimientos cambian a lo largo de la vida del animal y del ciclo de la vaca de cría. Todos los animales tienen un requerimiento de mantenimiento; a eso se suma lo que necesitan para crecer, gestar, dar leche o engordar.
+
+| Etapa | Qué necesita | Qué domina el requerimiento |
+| Ternero al pie de la madre | Leche de la madre y, desde los primeros meses, pasto tierno | Crecimiento: necesita mucha proteína para formar músculo y hueso |
+| Ternero destetado y recría | Pasto de buena calidad (verdeos, praderas) y a veces suplemento | Crecimiento: proteína y energía. Es la etapa en que más importa la proteína |
+| Vaquillona de reposición | Crecer en forma continua, sin engrasarse ni atrasarse, hasta llegar al peso de entore | Crecimiento: energía y proteína equilibradas |
+| Vaca seca, en gestación temprana o media | Mantener su estado; el feto todavía es chico | Mantenimiento: es el momento de menor requerimiento de la vaca |
+| Vaca en el último tercio de gestación | Mantenimiento más el crecimiento rápido del ternero en el útero | Gestación: el requerimiento sube y la vaca debe llegar al parto en buen estado |
+| Vaca con ternero al pie (lactancia) | Mantenerse, producir leche y volver a preñarse | Lactancia: es el requerimiento más alto del ciclo, sobre todo de energía |
+| Novillo en engorde y terminación | Ganar peso y terminar con la grasa justa | Energía: depositar grasa requiere mucha energía |
+| Toro | Mantenerse y llegar al servicio en buen estado | Mantenimiento, con mejor alimentación antes del servicio |
+
+Ideas clave:
+- La vaca con ternero al pie es la categoría que más necesita: si come poco en esa etapa, pierde estado y le cuesta volver a preñarse.
+- Los animales jóvenes necesitan proporcionalmente más proteína porque están formando músculo y hueso.
+- En la terminación lo que más pesa es la energía.
+- La condición corporal (qué tan gorda o flaca está la vaca, que se evalúa mirando y tocando) ayuda a saber si está cubriendo sus requerimientos.
+
+Ejemplo de campo: una vaca seca en el otoño puede mantenerse bien en campo natural. La misma vaca, con un ternero al pie, necesita mucho más: un verdeo de avena o una pradera le ayudan a dar leche, sostener su estado y volver a preñarse.
