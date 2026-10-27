@@ -99,12 +99,15 @@ def preguntar_a_gemini(mensaje, como_json=False):
         return respuesta.text
     except Exception as error:
         texto = str(error)
+        print(f"Error de Gemini: {texto}")  # queda en los registros de Streamlit (Manage app)
         if "429" in texto or "RESOURCE_EXHAUSTED" in texto:
             st.warning(MENSAJE_CUOTA)
         elif "API key" in texto or "API_KEY" in texto or "PERMISSION_DENIED" in texto:
             st.warning(MENSAJE_SIN_CLAVE)
         else:
             st.warning(MENSAJE_ERROR)
+        with st.expander("Detalle técnico"):
+            st.caption(texto[:500])
         return None
 
 
