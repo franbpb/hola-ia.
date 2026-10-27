@@ -14,7 +14,8 @@ from google import genai
 from google.genai import types
 
 # --- Configuración -------------------------------------------------------------
-MODELO = "gemini-3.8-flash"  # si da error 429 seguido, probar "gemini-3.5-flash-lite"
+MODELO = "gemini-3.8-flash"
+MODELO_RESERVA = "gemini-3.5-flash-lite"  # se usa si el principal está saturado (429 o 503)
 
 CARPETA = Path(__file__).parent
 APUNTE = (CARPETA / "apunte.txt").read_text(encoding="utf-8")
@@ -92,23 +93,29 @@ def preguntar_a_gemini(mensaje, como_json=False):
         system_instruction=SYSTEM_PROMPT,
         response_mime_type="application/json" if como_json else "text/plain",
     )
-    try:
-        respuesta = cliente.models.generate_content(
-            model=MODELO, contents=mensaje, config=configuracion
-        )
-        return respuesta.text
-    except Exception as error:
-        texto = str(error)
-        print(f"Error de Gemini: {texto}")  # queda en los registros de Streamlit (Manage app)
-        if "429" in texto or "RESOURCE_EXHAUSTED" in texto:
-            st.warning(MENSAJE_CUOTA)
-        elif "API key" in texto or "API_KEY" in texto or "PERMISSION_DENIED" in texto:
-            st.warning(MENSAJE_SIN_CLAVE)
-        else:
-            st.warning(MENSAJE_ERROR)
-        with st.expander("Detalle técnico"):
-            st.caption(texto[:500])
-        return None
+    texto = ""
+    for modelo in (MODELO, MODELO_RESERVA):
+        try:
+            respuesta = cliente.models.generate_content(
+                model=modelo, contents=mensaje, config=configuracion
+            )
+            return respuesta.text
+        except Exception as error:
+            texto = str(error)
+            print(f"Error de Gemini con {modelo}: {texto}")  # queda en los registros de Streamlit
+            saturado = any(
+                codigo in texto for codigo in ("429", "RESOURCE_EXHAUSTED", "503", "UNAVAILABLE")
+            )
+            if not saturado:
+                break  # otro tipo de error: no vale la pena probar el modelo de reserva
+
+    if any(codigo in texto for codigo in ("429", "RESOURCE_EXHAUSTED", "503", "UNAVAILABLE")):
+        st.warning(MENSAJE_CUOTA)
+    elif "API key" in texto or "API_KEY" in texto or "PERMISSION_DENIED" in texto:
+        st.warning(MENSAJE_SIN_CLAVE)
+    else:
+        st.warning(MENSAJE_ERROR)
+    return None
 
 
 # --- Pantalla ------------------------------------------------------------------
