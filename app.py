@@ -77,7 +77,15 @@ MENSAJE_ERROR = (
 @st.cache_resource
 def obtener_cliente():
     """Crea el cliente de Gemini una sola vez, con la clave de los secretos."""
-    return genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
+    return genai.Client(
+        api_key=st.secrets["GEMINI_API_KEY"],
+        # Máximo 45 segundos por intento y sin reintentos largos: si el modelo está
+        # saturado, pasamos rápido al modelo de reserva.
+        http_options=types.HttpOptions(
+            timeout=45_000,
+            retry_options=types.HttpRetryOptions(attempts=1),
+        ),
+    )
 
 
 def preguntar_a_gemini(mensaje, como_json=False):
@@ -104,12 +112,16 @@ def preguntar_a_gemini(mensaje, como_json=False):
             texto = str(error)
             print(f"Error de Gemini con {modelo}: {texto}")  # queda en los registros de Streamlit
             saturado = any(
-                codigo in texto for codigo in ("429", "RESOURCE_EXHAUSTED", "503", "UNAVAILABLE")
+                codigo in texto
+                for codigo in ("429", "RESOURCE_EXHAUSTED", "503", "UNAVAILABLE", "imed out", "imeout")
             )
             if not saturado:
                 break  # otro tipo de error: no vale la pena probar el modelo de reserva
 
-    if any(codigo in texto for codigo in ("429", "RESOURCE_EXHAUSTED", "503", "UNAVAILABLE")):
+    if any(
+        codigo in texto
+        for codigo in ("429", "RESOURCE_EXHAUSTED", "503", "UNAVAILABLE", "imed out", "imeout")
+    ):
         st.warning(MENSAJE_CUOTA)
     elif "API key" in texto or "API_KEY" in texto or "PERMISSION_DENIED" in texto:
         st.warning(MENSAJE_SIN_CLAVE)
