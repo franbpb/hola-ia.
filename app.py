@@ -86,10 +86,10 @@ def obtener_cliente():
     """Crea el cliente de Gemini una sola vez, con la clave de los secretos."""
     return genai.Client(
         api_key=st.secrets["GEMINI_API_KEY"],
-        # Máximo 45 segundos por intento y sin reintentos largos: si el modelo está
+        # Máximo 40 segundos por intento y sin reintentos largos: si el modelo está
         # saturado, pasamos rápido al modelo de reserva.
         http_options=types.HttpOptions(
-            timeout=45_000,
+            timeout=40_000,
             retry_options=types.HttpRetryOptions(attempts=1),
         ),
     )
@@ -116,7 +116,7 @@ def preguntar_a_gemini(mensaje, como_json=False):
             )
             return respuesta.text
         except Exception as error:
-            texto = str(error)
+            texto = f"{type(error).__name__}: {error}"  # el tipo sirve cuando el mensaje viene vacío
             print(f"Error de Gemini con {modelo}: {texto}")  # queda en los registros de Streamlit
             saturado = any(
                 codigo in texto
