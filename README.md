@@ -44,6 +44,31 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+## Prompts clave
+
+Trabajé con Claude como asistente de programación. Las reglas para el agente están en `AGENTS.md` (y `CLAUDE.md` remite a él). Algunos prompts, tal como los escribí:
+
+| Prompt | Qué devolvió la IA | Qué decidí o revisé yo |
+|---|---|---|
+| "me gusta la idea pero que el tema sea algo sobre nutricion animal" | Problema, usuario y 3 funciones basados en mi apunte | Elegí el tema y el usuario (mis alumnos) |
+| "nose donde esta, capas que tenemos que armar uno nuevo" (sobre el apunte) | Un apunte nuevo con la estructura de la especificación, el `app.py` con Gemini y `requirements.txt` | Revisé el apunte, saqué la clave y la guardé en los secretos |
+| (foto de la app con "No pude responder en este momento") | Un cambio para ver el detalle del error: era un 503 (modelo saturado) | Acepté el arreglo: modelo de reserva y límite de tiempo |
+| "y si te conectas del navegador y lo haces vos?" | Subió los cambios a GitHub y probó la app con los criterios de aceptación | Inicié sesión yo y revisé el resultado de cada prueba |
+
+**Qué delegué y qué revisé a mano:** la IA redactó el código, la especificación, el `AGENTS.md` y el borrador del apunte. Yo elegí el problema y el usuario, escribí las 4 respuestas de referencia, creé las cuentas y la clave, y controlo que las respuestas sean técnicamente correctas.
+
+## Prueba y mejora
+
+Probé la app publicada con los criterios de aceptación de la especificación (nadie la había comentado en el debate a tiempo). Las preguntas de referencia, la pregunta informal, la casilla vacía y el tema fuera del apunte salieron bien. Encontré tres fallas:
+
+- Ante "armame la ración para mis 50 novillos" no calculaba (bien), pero decía que el tema no estaba en el apunte en lugar de explicar el concepto.
+- Ante "¿quién ganó el clásico?" sugería consultarlo con el profesor.
+- Todas las respuestas empezaban con saludos.
+
+**Qué cambié:** ajusté las reglas del system prompt. Ahora, ante un pedido de cálculo real, explica qué hay que tener en cuenta (en el novillo de engorde domina la energía; un bovino come entre el 2% y el 3% de su peso vivo en materia seca) y deriva el cálculo al docente; ante preguntas fuera de tema responde en una sola frase, y ya no saluda. Además apareció un error 503 por saturación de Gemini: agregué un modelo de reserva y un límite de 40 segundos por intento.
+
+También probé la app de un compañero (Nubapp) y le dejé feedback en su hilo del debate.
+
 ## Pitch
 
 1. Mis alumnos de bachillerato agrario se trancan con conceptos como materia seca o requerimiento cuando estudian en casa, y lo que encuentran en internet no coincide con lo que se dio en clase.
